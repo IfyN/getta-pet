@@ -4,54 +4,18 @@
       <div class="app-container">
         <header class="app-header dark-brown">
           <h1>My Pet Store</h1>
+          <v-toolbar>
+            <v-toolbar-items>
+              <v-btn to="/" text>Home</v-btn>
+              <v-btn to="/pets" text>Pets</v-btn>
+            </v-toolbar-items>
+          </v-toolbar>
+
           <v-btn @click="themeSwitched = !themeSwitched">Switch theme</v-btn>
         </header>
-        <div class="wrapper">
-          <div class="panel tall-panel light-mint">
-            <h2>Pet Products</h2>
-            <p>Premium Puppy Chow</p>
-            <p>Kibble, sale in bulk, ₦500/lb</p>
-            <img
-              src="https://raw.githubusercontent.com/FrontEndFoxes/projects/main/petshop/images/food.png"
-            />
-          </div>
-          <div class="panel bisque">
-            <h2>Donate</h2>
-          </div>
-          <div class="panel tall-panel light-brown">
-            <h2>Adoptable Pets</h2>
-            <p>Fisher, Chihuahua, age 3</p>
-            <img
-              src="https://raw.githubusercontent.com/FrontEndFoxes/projects/main/petshop/images/chihuahua.jpg"
-            />
-          </div>
 
-          <div class="panel bisque">
-            <h2>Contact Us</h2>
-          </div>
-          <div class="panel tall-panel dark-mint">
-            <h2>Pet of the Month</h2>
-            <p>Meet Stanley, A young French Bulldog</p>
-            <img
-              src="https://raw.githubusercontent.com/FrontEndFoxes/projects/main/petshop/images/bulldog.jpg"
-            />
-          </div>
-          <div class="panel tall-panel light-mint">
-            <h2>Success Stories</h2>
-            <p>Bennie found his forever home!</p>
-            <img
-              src="https://raw.githubusercontent.com/FrontEndFoxes/projects/main/petshop/images/collie.jpg"
-            />
-          </div>
+        <router-view></router-view>
 
-          <div class="panel bisque">
-            <h2>Special Events</h2>
-          </div>
-
-          <div class="panel bisque">
-            <h2>Learn About Pet Ownership</h2>
-          </div>
-        </div>
         <footer class="app-footer dark-brown">
           <p>15 Achebe Street, Aba |P.O Box 15576 | 08036E6T68</p>
         </footer>
