@@ -1,5 +1,5 @@
-# pet-store
+# Getta Pet
 Created with CodeSandbox
 
-### Pet Store
-is a project built with Vue and Vuetify which displays items avaialable for pets in a pet store and a grid display of dogs.
+### Getta Pet
+is a project built with Vue and Vuetify which displays items for sale avaialable for pets in a pet store and another page wih a grid display of dogs.
